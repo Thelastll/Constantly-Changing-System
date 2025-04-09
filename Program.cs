@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using static ConstantlyChangingSystem.Object_Base;
 
-//Система состоит из объектов различных типов, каждую итерацию присваивающих значение своему полю "root" при помощи функции "main" на основе полей "stem" объектов других типов.
-//Каждая функция "main" должна  использовать все поля класса типа "Object_Base" в количестве не меньше 1 и иметь максимально упрощенный вид.
-//Количество объектов должно быть не меньше 2.
-//Все объекты системы должны взаимодействовать напрямую или косвенно друг с другом.
-//За 1 итерацию хотя бы 1 объект должен изменить свое поле "root", иначе система будет считаться статичной.
-
 namespace ConstantlyChangingSystem
 {
     internal class Programe
@@ -19,9 +13,9 @@ namespace ConstantlyChangingSystem
         static void Main()
         {
             A a = new A(new decimal[2] { 0, 1 });
-            A a1 = new A(new decimal[2] { 15, -1 });
+            A a1 = new A(new decimal[2] { 15, -1} );
 
-            Run_System.Run(new ObjectCCS[][] { new ObjectCCS[] { a, a1 }, new ObjectCCS[] { a1, a } }, 1, 2);
+            Run_System.Run(new ObjectCCS[][] { new ObjectCCS[] {a, a1}, new ObjectCCS[] {a1, a} }, -1, 2);
 
             Console.ReadKey();
         }
@@ -29,19 +23,29 @@ namespace ConstantlyChangingSystem
 
     static class Run_System
     {
-        private static bool infinity;
-        public static void Run(ObjectCCS[][] objects, int num_of_iter, int stop = 0)
+        public static void Run(ObjectCCS[][] objects, int num_of_iter = 0, int stop = 0)
         {
-            infinity = num_of_iter < 0;
+            if (objects == null)
+            {
+                throw new ArgumentNullException("Exemplars were not passed.");
+            }    
+
+            stop = Math.Abs(stop);
+            num_of_iter++;
 
             foreach (ObjectCCS[] ob in objects)
             {
+                if (ob.Length == 0)
+                {
+                    throw new Exception("Objects were not passed");
+                }
+
                 ObjectCCS[] ob_list = new ObjectCCS[ob.Length - 1];
                 Array.Copy(ob, 1, ob_list, 0, ob_list.Length);
                 ob[0].assigning_objects(ob_list);
             }
 
-            for (int i = 0; i < num_of_iter || infinity; i++)
+            for (int i = 0; i < num_of_iter || num_of_iter <= 0; i++)
             {
                 Console.WriteLine("----------\nIteration " + i + "\n----------");
                 foreach (ObjectCCS[] ob in objects)
@@ -58,7 +62,7 @@ namespace ConstantlyChangingSystem
                     ob[0].end();
                 }
 
-                if (stop != 0 && (i+1) % stop == 0)
+                if (stop != 0 && i % stop == 0 && (i+1 < num_of_iter || num_of_iter <= 0))
                 {
                     Console.ReadKey();
                 }
@@ -83,11 +87,20 @@ namespace ConstantlyChangingSystem
 
     abstract class ObjectCCS : Object_Base
     {
-        protected ObjectCCS(decimal[] initiate_values)
+        protected ObjectCCS(decimal[] initial_values)
         {
-            for (int i = 0; i < values.Length/2; i++)
+            if (initial_values == null)
             {
-                values[i, 0] = values[i, 1] = initiate_values[i];
+                throw new ArgumentNullException("Initial values ​​were not passed.");
+            } 
+            else if (initial_values.Length < values.Length/2)
+            {
+                throw new Exception("Not all parameters were set.");
+            }
+
+            for (int i = 0; i < values.Length / 2; i++)
+            {
+                values[i, 0] = values[i, 1] = initial_values[i];
             }
         }
         public abstract void main();
@@ -100,9 +113,16 @@ namespace ConstantlyChangingSystem
         public virtual void print_values()
         {
             Console.WriteLine('\n' + GetType().Name);
-            for (int i = 0; i < Enum.GetValues(typeof(Values_Type)).Length; i++)
+            if (Enum.GetValues(typeof(Values_Type)).Length > 0)
             {
-                Console.WriteLine(((Values_Type)i).ToString() + ' ' + values[i, 0]);
+                for (int i = 0; i < Enum.GetValues(typeof(Values_Type)).Length; i++)
+                {
+                    Console.WriteLine(((Values_Type)i).ToString() + ' ' + values[i, 0]);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Object has no parameters.");
             }
         }
 
@@ -117,9 +137,8 @@ namespace ConstantlyChangingSystem
 
     class A : ObjectCCS
     {
-        public A(decimal[] initiate_values) : base(initiate_values)
+        public A(decimal[] initial_values) : base(initial_values)
         {
-
         }
         public override void main()
         {
