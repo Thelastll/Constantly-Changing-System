@@ -2,43 +2,46 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ConstantlyChangingSystem.Object_Base">
     <Position X="4.25" Y="1.5" Width="1.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="ConstantlyChangingSystem.Object_Base.Values_Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Program.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConstantlyChangingSystem.ObjectCCS">
     <Position X="7.25" Y="1.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAw=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConstantlyChangingSystem.A">
     <Position X="4.75" Y="4.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAQAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAQ=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConstantlyChangingSystem.B">
     <Position X="9.5" Y="4.25" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAgAAAAAAAAAAQ=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ConstantlyChangingSystem.C">
-    <Position X="7.25" Y="4.25" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAgAQAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAQ=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ConstantlyChangingSystem.Run_System">
     <Position X="11" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAI=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>

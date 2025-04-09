@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static ConstantlyChangingSystem.Object_Base;
 
 //Система состоит из объектов различных типов, каждую итерацию присваивающих значение своему полю "root" при помощи функции "main" на основе полей "stem" объектов других типов.
 //Каждая функция "main" должна  использовать все поля класса типа "Object_Base" в количестве не меньше 1 и иметь максимально упрощенный вид.
@@ -17,11 +18,10 @@ namespace ConstantlyChangingSystem
     {
         static void Main()
         {
-            A a = new A(1);
-            B b = new B(1);
-            C c = new C(0);
+            A a = new A(new decimal[2] { 0, 1 });
+            A a1 = new A(new decimal[2] { 15, -1 });
 
-            Run_System.Run(new ObjectCCS[][] { new ObjectCCS[] { a, b }, new ObjectCCS[] { b, a }, new ObjectCCS[] { c, a, b } }, 10);
+            Run_System.Run(new ObjectCCS[][] { new ObjectCCS[] { a, a1 }, new ObjectCCS[] { a1, a } }, 1, 2);
 
             Console.ReadKey();
         }
@@ -30,117 +30,122 @@ namespace ConstantlyChangingSystem
     static class Run_System
     {
         private static bool infinity;
-        public static void Run(ObjectCCS[][] objects, int num_of_iter)
+        public static void Run(ObjectCCS[][] objects, int num_of_iter, int stop = 0)
         {
+            infinity = num_of_iter < 0;
+
             foreach (ObjectCCS[] ob in objects)
             {
                 ObjectCCS[] ob_list = new ObjectCCS[ob.Length - 1];
                 Array.Copy(ob, 1, ob_list, 0, ob_list.Length);
-                ob[0].assigning_values(ob_list);
+                ob[0].assigning_objects(ob_list);
             }
 
-            if (num_of_iter <= -1)
+            for (int i = 0; i < num_of_iter || infinity; i++)
             {
-                num_of_iter = 1;
-                infinity = true;
-            }
-
-            for (int i = 0; i < num_of_iter; i++)
-            {
+                Console.WriteLine("----------\nIteration " + i + "\n----------");
                 foreach (ObjectCCS[] ob in objects)
                 {
+                    ob[0].print_values();
+
+                    Console.WriteLine();
+
                     ob[0].main();
-                    Console.WriteLine(ob[0].root);
-                }
-                Console.WriteLine();
+                }  
 
                 foreach (ObjectCCS[] ob in objects)
                 {
                     ob[0].end();
                 }
 
-                if (infinity)
+                if (stop != 0 && (i+1) % stop == 0)
                 {
-                    i--;
+                    Console.ReadKey();
                 }
             }
+
+            Console.WriteLine("\n----------\n   END  \n----------");
         }
     }
 
     abstract class Object_Base
-    {
-        public double stem { get; protected set; }
+    {       
+        public enum Values_Type
+        {
+            x,
+            speed
+        }
+
+        public decimal[,] values = new decimal[Enum.GetValues(typeof(Values_Type)).Length, 2];
+
+        protected Object_Base[] objects;
     }
 
     abstract class ObjectCCS : Object_Base
     {
-        public abstract double root { get; protected set; }
-        protected ObjectCCS(double begin_value)
+        protected ObjectCCS(decimal[] initiate_values)
         {
-            stem = root = begin_value;
+            for (int i = 0; i < values.Length/2; i++)
+            {
+                values[i, 0] = values[i, 1] = initiate_values[i];
+            }
         }
         public abstract void main();
 
-        public abstract void assigning_values(Object_Base[] list);
-
-        public void end()
+        public virtual void assigning_objects(Object_Base[] list) 
         {
-            stem = root;
+            objects = list;
+        }
+        
+        public virtual void print_values()
+        {
+            Console.WriteLine('\n' + GetType().Name);
+            for (int i = 0; i < Enum.GetValues(typeof(Values_Type)).Length; i++)
+            {
+                Console.WriteLine(((Values_Type)i).ToString() + ' ' + values[i, 0]);
+            }
+        }
+
+        public virtual void end()
+        {
+            foreach (int i in Enum.GetValues(typeof(Values_Type)))
+            {
+                values[i, 1] = values[i, 0];
+            }
         }
     }
 
     class A : ObjectCCS
     {
-        private Object_Base b;
-        public A(double begin_value) : base(begin_value)
+        public A(decimal[] initiate_values) : base(initiate_values)
         {
+
         }
-        public override double root { get; protected set; }
         public override void main()
         {
-            root = b.stem;
-        }
+            decimal step = values[(int)Values_Type.speed, 1] - objects[0].values[(int)Values_Type.speed, 1];
+            decimal distance = Math.Abs(values[(int)Values_Type.x, 1] - objects[0].values[(int)Values_Type.x, 1]);
 
-        public override void assigning_values(Object_Base[] list)
-        {
-            b = list[0];
-        }
-    }
+            if (values[(int)Values_Type.speed, 1] < 0)
+            {
+                step *= -1;
+            }
 
-    class B : ObjectCCS
-    {
-        private Object_Base a;
-        public B(double begin_value) : base(begin_value)
-        {
-        }
-        public override double root { get; protected set; }
-        public override void main()
-        {
-            root = (a.stem - 1) * -1;
-        }
-        public override void assigning_values(Object_Base[] list)
-        {
-            a = list[0];
-        }
-    }
+            if (distance < step)
+            {
+                if (step != 0)
+                {
+                    values[(int)Values_Type.x, 0] += distance / step * values[(int)Values_Type.speed, 1];
+                }
 
-    class C : ObjectCCS
-    {
-        private Object_Base a;
-        private Object_Base b;
+                values[(int)Values_Type.speed, 0] += objects[0].values[(int)Values_Type.speed, 1];
 
-        public C(double begin_value) : base(begin_value)
-        {
-        }
-        public override double root { get; protected set; }
-        public override void main()
-        {
-            root = a.stem + b.stem;
-        }
-        public override void assigning_values(Object_Base[] list)
-        {
-            a = list[0];
-            b = list[1];
+            }
+            else
+            {
+
+                values[(int)Values_Type.x, 0] += values[(int)Values_Type.speed, 1];
+            }
         }
     }
 }
