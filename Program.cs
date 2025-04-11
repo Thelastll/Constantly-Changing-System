@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using static ConstantlyChangingSystem.Object_Base;
+using System.Windows.Forms;
 
 namespace ConstantlyChangingSystem
 {
@@ -12,12 +12,9 @@ namespace ConstantlyChangingSystem
     {
         static void Main()
         {
-            A a = new A(new decimal[2] { 0, 1 });
-            A a1 = new A(new decimal[2] { 15, -1} );
-
-            Run_System.Run(new ObjectCCS[][] { new ObjectCCS[] {a, a1}, new ObjectCCS[] {a1, a} }, -1, 2);
-
-            Console.ReadKey();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Main_Interface());
         }
     }
 
@@ -131,39 +128,6 @@ namespace ConstantlyChangingSystem
             foreach (int i in Enum.GetValues(typeof(Values_Type)))
             {
                 values[i, 1] = values[i, 0];
-            }
-        }
-    }
-
-    class A : ObjectCCS
-    {
-        public A(decimal[] initial_values) : base(initial_values)
-        {
-        }
-        public override void main()
-        {
-            decimal step = values[(int)Values_Type.speed, 1] - objects[0].values[(int)Values_Type.speed, 1];
-            decimal distance = Math.Abs(values[(int)Values_Type.x, 1] - objects[0].values[(int)Values_Type.x, 1]);
-
-            if (values[(int)Values_Type.speed, 1] < 0)
-            {
-                step *= -1;
-            }
-
-            if (distance < step)
-            {
-                if (step != 0)
-                {
-                    values[(int)Values_Type.x, 0] += distance / step * values[(int)Values_Type.speed, 1];
-                }
-
-                values[(int)Values_Type.speed, 0] += objects[0].values[(int)Values_Type.speed, 1];
-
-            }
-            else
-            {
-
-                values[(int)Values_Type.x, 0] += values[(int)Values_Type.speed, 1];
             }
         }
     }

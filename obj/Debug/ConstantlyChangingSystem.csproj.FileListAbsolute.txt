@@ -5,3 +5,6 @@ C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChang
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.exe
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.pdb
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.GenerateResource.cache
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Main_Interface.resources
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Edit_Objects.resources

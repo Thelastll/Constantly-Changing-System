@@ -18,21 +18,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ConstantlyChangingSystem.ObjectCCS">
-    <Position X="7.25" Y="1.25" Width="1.25" />
+    <Position X="6.25" Y="1.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAw=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ConstantlyChangingSystem.A">
-    <Position X="7.25" Y="4.25" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="ConstantlyChangingSystem.Run_System">
-    <Position X="11" Y="1.25" Width="1.5" />
+    <Position X="8.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Program.cs</FileName>
