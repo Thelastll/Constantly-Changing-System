@@ -2,9 +2,9 @@ C:\Users\user\source\repos\C#\ConstantlyChangingSystem\bin\Debug\ConstantlyChang
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\bin\Debug\ConstantlyChangingSystem.exe
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\bin\Debug\ConstantlyChangingSystem.pdb
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Edit_Objects.resources
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Main_Interface.resources
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.GenerateResource.cache
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.exe
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.pdb
-C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.GenerateResource.cache
-C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Main_Interface.resources
-C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Edit_Objects.resources
