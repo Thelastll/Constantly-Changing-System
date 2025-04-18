@@ -8,3 +8,4 @@ C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChang
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.exe
 C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.pdb
+C:\Users\user\source\repos\C#\ConstantlyChangingSystem\obj\Debug\ConstantlyChangingSystem.Param_menu.resources

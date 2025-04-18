@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\main_interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|c:\\users\\user\\source\\repos\\c#\\constantlychangingsystem\\param_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:param_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|c:\\users\\user\\source\\repos\\c#\\constantlychangingsystem\\main_interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:main_interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,15 +15,19 @@
       "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:Edit_Objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Main_Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:Main_Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Edit_Objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:Edit_Objects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|c:\\users\\user\\source\\repos\\c#\\constantlychangingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|c:\\users\\user\\source\\repos\\c#\\constantlychangingsystem\\param_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:param_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Main_Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:Main_Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FAA9ED3-666E-434F-9588-6A7B570914A9}|ConstantlyChangingSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -54,18 +62,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T08:39:49.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T08:39:49.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Main_Interface.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Main_Interface.cs",
               "RelativeDocumentMoniker": "Main_Interface.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Main_Interface.cs",
               "RelativeToolTip": "Main_Interface.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAASwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T06:47:02.901Z",
               "EditorCaption": ""
@@ -78,14 +85,27 @@
               "RelativeDocumentMoniker": "Edit_Objects.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Edit_Objects.cs",
               "RelativeToolTip": "Edit_Objects.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAawB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T11:14:38.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Param_menu.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Param_menu.cs",
+              "RelativeDocumentMoniker": "Param_menu.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Param_menu.cs",
+              "RelativeToolTip": "Param_menu.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:12:35.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main_Interface.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Main_Interface.cs",
               "RelativeDocumentMoniker": "Main_Interface.cs",
@@ -97,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Edit_Objects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Edit_Objects.cs",
               "RelativeDocumentMoniker": "Edit_Objects.cs",
@@ -105,6 +125,18 @@
               "RelativeToolTip": "Edit_Objects.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T11:13:53.46Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Param_menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Param_menu.cs",
+              "RelativeDocumentMoniker": "Param_menu.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\C#\\ConstantlyChangingSystem\\Param_menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Param_menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:12:13.772Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]

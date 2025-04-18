@@ -13,6 +13,7 @@ namespace ConstantlyChangingSystem
     public partial class Main_Interface : Form
     {
         private Edit_Objects edit_objects;
+        private Param_menu param_menu;
 
         public Main_Interface()
         {
@@ -22,6 +23,7 @@ namespace ConstantlyChangingSystem
         private void Form1_Load(object sender, EventArgs e)
         {
             edit_objects = new Edit_Objects();
+            param_menu = new Param_menu();
         }
 
         private void run_Click(object sender, EventArgs e)
@@ -39,6 +41,11 @@ namespace ConstantlyChangingSystem
         private void edit_Click(object sender, EventArgs e)
         {
             edit_objects.ShowDialog();
+        }
+
+        private void describe_Click(object sender, EventArgs e)
+        {
+            param_menu.ShowDialog();
         }
     }
 }

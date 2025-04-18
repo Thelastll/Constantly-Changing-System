@@ -75,6 +75,12 @@
     <Compile Include="Main_Interface.Designer.cs">
       <DependentUpon>Main_Interface.cs</DependentUpon>
     </Compile>
+    <Compile Include="Param_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Param_menu.Designer.cs">
+      <DependentUpon>Param_menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Interface.resx">
       <DependentUpon>Main_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Param_menu.resx">
+      <DependentUpon>Param_menu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -37,37 +37,40 @@
             this.clear = new System.Windows.Forms.Button();
             this.saved_table = new System.Windows.Forms.Label();
             this.redact_func = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.search = new System.Windows.Forms.Button();
-            this.search_peram = new System.Windows.Forms.TextBox();
+            this.search_param = new System.Windows.Forms.TextBox();
             this.search_object = new System.Windows.Forms.TextBox();
             this.search_type = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.objects_list = new System.Windows.Forms.CheckedListBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.del_object = new System.Windows.Forms.Button();
-            this.add_object = new System.Windows.Forms.Button();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.param_list = new System.Windows.Forms.ListBox();
-            this.del_param = new System.Windows.Forms.Button();
-            this.add_param = new System.Windows.Forms.Button();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.del_type = new System.Windows.Forms.Button();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.add_type = new System.Windows.Forms.Button();
+            this.del_type = new System.Windows.Forms.Button();
             this.type_list = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.add_object = new System.Windows.Forms.Button();
+            this.del_object = new System.Windows.Forms.Button();
+            this.objects_list = new System.Windows.Forms.CheckedListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.add_param = new System.Windows.Forms.Button();
+            this.del_param = new System.Windows.Forms.Button();
+            this.param_list = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -206,6 +209,7 @@
             this.saved_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.saved_table.Dock = System.Windows.Forms.DockStyle.Fill;
             this.saved_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saved_table.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saved_table.Location = new System.Drawing.Point(15, 0);
             this.saved_table.Margin = new System.Windows.Forms.Padding(15, 0, 15, 15);
             this.saved_table.Name = "saved_table";
@@ -218,12 +222,67 @@
             // 
             this.redact_func.BackColor = System.Drawing.Color.Honeydew;
             this.redact_func.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.redact_func.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.redact_func.Location = new System.Drawing.Point(15, 315);
             this.redact_func.Margin = new System.Windows.Forms.Padding(15, 15, 15, 0);
             this.redact_func.Name = "redact_func";
             this.redact_func.Size = new System.Drawing.Size(510, 306);
             this.redact_func.TabIndex = 1;
             this.redact_func.Text = "";
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 1;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel10.Controls.Add(this.type_list, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel12, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 3;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 81F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(540, 300);
+            this.tableLayoutPanel10.TabIndex = 2;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.objects_list, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel11, 0, 2);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(540, 0);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.5F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(405, 684);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel8.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.param_list, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel7, 0, 2);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(945, 0);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 3;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.5F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(407, 684);
+            this.tableLayoutPanel8.TabIndex = 2;
             // 
             // tableLayoutPanel4
             // 
@@ -233,7 +292,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.Controls.Add(this.search, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.search_peram, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.search_param, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.search_object, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.search_type, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -264,19 +323,21 @@
             this.search.Text = "поиск";
             this.search.UseVisualStyleBackColor = false;
             // 
-            // search_peram
+            // search_param
             // 
-            this.search_peram.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.search_peram.Location = new System.Drawing.Point(820, 7);
-            this.search_peram.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.search_peram.Multiline = true;
-            this.search_peram.Name = "search_peram";
-            this.search_peram.Size = new System.Drawing.Size(385, 25);
-            this.search_peram.TabIndex = 2;
+            this.search_param.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.search_param.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.search_param.Location = new System.Drawing.Point(820, 7);
+            this.search_param.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.search_param.Multiline = true;
+            this.search_param.Name = "search_param";
+            this.search_param.Size = new System.Drawing.Size(385, 25);
+            this.search_param.TabIndex = 2;
             // 
             // search_object
             // 
             this.search_object.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.search_object.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.search_object.Location = new System.Drawing.Point(415, 7);
             this.search_object.Margin = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.search_object.Multiline = true;
@@ -287,6 +348,7 @@
             // search_type
             // 
             this.search_type.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.search_type.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.search_type.Location = new System.Drawing.Point(20, 7);
             this.search_type.Margin = new System.Windows.Forms.Padding(20, 7, 10, 7);
             this.search_type.Multiline = true;
@@ -294,219 +356,21 @@
             this.search_type.Size = new System.Drawing.Size(375, 25);
             this.search_type.TabIndex = 0;
             // 
-            // tableLayoutPanel6
+            // tableLayoutPanel12
             // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Controls.Add(this.objects_list, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 1);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(540, 0);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(405, 684);
-            this.tableLayoutPanel6.TabIndex = 1;
-            // 
-            // objects_list
-            // 
-            this.objects_list.BackColor = System.Drawing.Color.Honeydew;
-            this.objects_list.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.objects_list.FormattingEnabled = true;
-            this.objects_list.Location = new System.Drawing.Point(15, 0);
-            this.objects_list.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.objects_list.Name = "objects_list";
-            this.objects_list.Size = new System.Drawing.Size(375, 642);
-            this.objects_list.TabIndex = 0;
-            // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.add_object, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.del_object, 0, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 642);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(405, 42);
-            this.tableLayoutPanel7.TabIndex = 1;
-            // 
-            // del_object
-            // 
-            this.del_object.BackColor = System.Drawing.Color.Honeydew;
-            this.del_object.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.del_object.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.del_object.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.del_object.FlatAppearance.BorderSize = 2;
-            this.del_object.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
-            this.del_object.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.del_object.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.del_object.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.del_object.Location = new System.Drawing.Point(15, 5);
-            this.del_object.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
-            this.del_object.Name = "del_object";
-            this.del_object.Size = new System.Drawing.Size(180, 32);
-            this.del_object.TabIndex = 5;
-            this.del_object.Text = "x";
-            this.del_object.UseVisualStyleBackColor = false;
-            // 
-            // add_object
-            // 
-            this.add_object.BackColor = System.Drawing.Color.Honeydew;
-            this.add_object.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add_object.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.add_object.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.add_object.FlatAppearance.BorderSize = 2;
-            this.add_object.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
-            this.add_object.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.add_object.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_object.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.add_object.Location = new System.Drawing.Point(209, 5);
-            this.add_object.Margin = new System.Windows.Forms.Padding(7, 5, 15, 5);
-            this.add_object.Name = "add_object";
-            this.add_object.Size = new System.Drawing.Size(181, 32);
-            this.add_object.TabIndex = 6;
-            this.add_object.Text = "+";
-            this.add_object.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.ColumnCount = 1;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 1);
-            this.tableLayoutPanel8.Controls.Add(this.param_list, 0, 0);
-            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(945, 0);
-            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 2;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(407, 684);
-            this.tableLayoutPanel8.TabIndex = 2;
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.add_param, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.del_param, 0, 0);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 642);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(407, 42);
-            this.tableLayoutPanel9.TabIndex = 0;
-            // 
-            // param_list
-            // 
-            this.param_list.BackColor = System.Drawing.Color.Honeydew;
-            this.param_list.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.param_list.FormattingEnabled = true;
-            this.param_list.ItemHeight = 16;
-            this.param_list.Location = new System.Drawing.Point(15, 0);
-            this.param_list.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.param_list.Name = "param_list";
-            this.param_list.Size = new System.Drawing.Size(377, 642);
-            this.param_list.TabIndex = 1;
-            // 
-            // del_param
-            // 
-            this.del_param.BackColor = System.Drawing.Color.Honeydew;
-            this.del_param.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.del_param.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.del_param.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.del_param.FlatAppearance.BorderSize = 2;
-            this.del_param.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
-            this.del_param.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.del_param.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.del_param.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.del_param.Location = new System.Drawing.Point(15, 5);
-            this.del_param.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
-            this.del_param.Name = "del_param";
-            this.del_param.Size = new System.Drawing.Size(181, 32);
-            this.del_param.TabIndex = 6;
-            this.del_param.Text = "x";
-            this.del_param.UseVisualStyleBackColor = false;
-            // 
-            // add_param
-            // 
-            this.add_param.BackColor = System.Drawing.Color.Honeydew;
-            this.add_param.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.add_param.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.add_param.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.add_param.FlatAppearance.BorderSize = 2;
-            this.add_param.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
-            this.add_param.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.add_param.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_param.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.add_param.Location = new System.Drawing.Point(210, 5);
-            this.add_param.Margin = new System.Windows.Forms.Padding(7, 5, 15, 5);
-            this.add_param.Name = "add_param";
-            this.add_param.Size = new System.Drawing.Size(182, 32);
-            this.add_param.TabIndex = 7;
-            this.add_param.Text = "+";
-            this.add_param.UseVisualStyleBackColor = false;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.ColumnCount = 1;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel11, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.type_list, 0, 0);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 2;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(540, 300);
-            this.tableLayoutPanel10.TabIndex = 2;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.add_type, 1, 0);
-            this.tableLayoutPanel11.Controls.Add(this.del_type, 0, 0);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 258);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 1;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(540, 42);
-            this.tableLayoutPanel11.TabIndex = 0;
-            // 
-            // del_type
-            // 
-            this.del_type.BackColor = System.Drawing.Color.Honeydew;
-            this.del_type.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.del_type.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.del_type.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.del_type.FlatAppearance.BorderSize = 2;
-            this.del_type.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
-            this.del_type.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
-            this.del_type.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.del_type.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.del_type.Location = new System.Drawing.Point(15, 5);
-            this.del_type.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
-            this.del_type.Name = "del_type";
-            this.del_type.Size = new System.Drawing.Size(248, 32);
-            this.del_type.TabIndex = 6;
-            this.del_type.Text = "x";
-            this.del_type.UseVisualStyleBackColor = false;
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Controls.Add(this.add_type, 1, 0);
+            this.tableLayoutPanel12.Controls.Add(this.del_type, 0, 0);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 258);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 1;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(540, 42);
+            this.tableLayoutPanel12.TabIndex = 2;
             // 
             // add_type
             // 
@@ -527,17 +391,212 @@
             this.add_type.Text = "+";
             this.add_type.UseVisualStyleBackColor = false;
             // 
+            // del_type
+            // 
+            this.del_type.BackColor = System.Drawing.Color.Honeydew;
+            this.del_type.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.del_type.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.del_type.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.del_type.FlatAppearance.BorderSize = 2;
+            this.del_type.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.del_type.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.del_type.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_type.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.del_type.Location = new System.Drawing.Point(15, 5);
+            this.del_type.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
+            this.del_type.Name = "del_type";
+            this.del_type.Size = new System.Drawing.Size(248, 32);
+            this.del_type.TabIndex = 6;
+            this.del_type.Text = "x";
+            this.del_type.UseVisualStyleBackColor = false;
+            // 
             // type_list
             // 
             this.type_list.BackColor = System.Drawing.Color.Honeydew;
             this.type_list.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.type_list.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.type_list.FormattingEnabled = true;
             this.type_list.ItemHeight = 16;
-            this.type_list.Location = new System.Drawing.Point(15, 0);
+            this.type_list.Location = new System.Drawing.Point(15, 15);
             this.type_list.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.type_list.Name = "type_list";
-            this.type_list.Size = new System.Drawing.Size(510, 258);
-            this.type_list.TabIndex = 1;
+            this.type_list.Size = new System.Drawing.Size(510, 243);
+            this.type_list.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Honeydew;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(15, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(510, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Список типов";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.Controls.Add(this.add_object, 1, 0);
+            this.tableLayoutPanel11.Controls.Add(this.del_object, 0, 0);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 642);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 1;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(405, 42);
+            this.tableLayoutPanel11.TabIndex = 2;
+            // 
+            // add_object
+            // 
+            this.add_object.BackColor = System.Drawing.Color.Honeydew;
+            this.add_object.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_object.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.add_object.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.add_object.FlatAppearance.BorderSize = 2;
+            this.add_object.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.add_object.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.add_object.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_object.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.add_object.Location = new System.Drawing.Point(209, 5);
+            this.add_object.Margin = new System.Windows.Forms.Padding(7, 5, 15, 5);
+            this.add_object.Name = "add_object";
+            this.add_object.Size = new System.Drawing.Size(181, 32);
+            this.add_object.TabIndex = 6;
+            this.add_object.Text = "+";
+            this.add_object.UseVisualStyleBackColor = false;
+            // 
+            // del_object
+            // 
+            this.del_object.BackColor = System.Drawing.Color.Honeydew;
+            this.del_object.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.del_object.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.del_object.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.del_object.FlatAppearance.BorderSize = 2;
+            this.del_object.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.del_object.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.del_object.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_object.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.del_object.Location = new System.Drawing.Point(15, 5);
+            this.del_object.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
+            this.del_object.Name = "del_object";
+            this.del_object.Size = new System.Drawing.Size(180, 32);
+            this.del_object.TabIndex = 5;
+            this.del_object.Text = "x";
+            this.del_object.UseVisualStyleBackColor = false;
+            // 
+            // objects_list
+            // 
+            this.objects_list.BackColor = System.Drawing.Color.Honeydew;
+            this.objects_list.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.objects_list.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.objects_list.FormattingEnabled = true;
+            this.objects_list.Location = new System.Drawing.Point(15, 17);
+            this.objects_list.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.objects_list.Name = "objects_list";
+            this.objects_list.Size = new System.Drawing.Size(375, 625);
+            this.objects_list.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Honeydew;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(15, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(375, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Список объектов";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.add_param, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.del_param, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 642);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(407, 42);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // add_param
+            // 
+            this.add_param.BackColor = System.Drawing.Color.Honeydew;
+            this.add_param.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.add_param.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.add_param.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.add_param.FlatAppearance.BorderSize = 2;
+            this.add_param.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.add_param.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.add_param.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_param.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.add_param.Location = new System.Drawing.Point(210, 5);
+            this.add_param.Margin = new System.Windows.Forms.Padding(7, 5, 15, 5);
+            this.add_param.Name = "add_param";
+            this.add_param.Size = new System.Drawing.Size(182, 32);
+            this.add_param.TabIndex = 7;
+            this.add_param.Text = "+";
+            this.add_param.UseVisualStyleBackColor = false;
+            // 
+            // del_param
+            // 
+            this.del_param.BackColor = System.Drawing.Color.Honeydew;
+            this.del_param.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.del_param.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.del_param.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.del_param.FlatAppearance.BorderSize = 2;
+            this.del_param.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
+            this.del_param.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
+            this.del_param.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.del_param.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.del_param.Location = new System.Drawing.Point(15, 5);
+            this.del_param.Margin = new System.Windows.Forms.Padding(15, 5, 7, 5);
+            this.del_param.Name = "del_param";
+            this.del_param.Size = new System.Drawing.Size(181, 32);
+            this.del_param.TabIndex = 6;
+            this.del_param.Text = "x";
+            this.del_param.UseVisualStyleBackColor = false;
+            // 
+            // param_list
+            // 
+            this.param_list.BackColor = System.Drawing.Color.Honeydew;
+            this.param_list.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.param_list.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.param_list.FormattingEnabled = true;
+            this.param_list.ItemHeight = 16;
+            this.param_list.Location = new System.Drawing.Point(15, 17);
+            this.param_list.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.param_list.Name = "param_list";
+            this.param_list.Size = new System.Drawing.Size(377, 625);
+            this.param_list.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Honeydew;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(15, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(377, 17);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Список объектов";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Edit_Objects
             // 
@@ -556,14 +615,17 @@
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -581,23 +643,26 @@
         private System.Windows.Forms.Label saved_table;
         private System.Windows.Forms.RichTextBox redact_func;
         private System.Windows.Forms.Button search;
-        private System.Windows.Forms.TextBox search_peram;
+        private System.Windows.Forms.TextBox search_param;
         private System.Windows.Forms.TextBox search_object;
         private System.Windows.Forms.TextBox search_type;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.CheckedListBox objects_list;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Button add_object;
-        private System.Windows.Forms.Button del_object;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.ListBox param_list;
-        private System.Windows.Forms.Button add_param;
-        private System.Windows.Forms.Button del_param;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.ListBox type_list;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.Button add_type;
         private System.Windows.Forms.Button del_type;
-        private System.Windows.Forms.ListBox type_list;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.Button add_object;
+        private System.Windows.Forms.Button del_object;
+        private System.Windows.Forms.CheckedListBox objects_list;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox param_list;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.Button add_param;
+        private System.Windows.Forms.Button del_param;
     }
 }

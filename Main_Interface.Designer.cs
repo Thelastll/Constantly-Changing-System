@@ -101,6 +101,7 @@
             this.stop_input.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stop_input.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.stop_input.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stop_input.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.stop_input.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.stop_input.Location = new System.Drawing.Point(0, 490);
             this.stop_input.Margin = new System.Windows.Forms.Padding(0);
@@ -110,7 +111,7 @@
             0,
             0});
             this.stop_input.Name = "stop_input";
-            this.stop_input.Size = new System.Drawing.Size(271, 18);
+            this.stop_input.Size = new System.Drawing.Size(271, 19);
             this.stop_input.TabIndex = 10;
             this.stop_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -185,6 +186,7 @@
             this.describe.TabIndex = 0;
             this.describe.Text = "Описать параметры";
             this.describe.UseVisualStyleBackColor = false;
+            this.describe.Click += new System.EventHandler(this.describe_Click);
             // 
             // label1
             // 
@@ -206,6 +208,7 @@
             this.iter_input.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.iter_input.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.iter_input.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iter_input.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iter_input.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.iter_input.Location = new System.Drawing.Point(0, 387);
             this.iter_input.Margin = new System.Windows.Forms.Padding(0);
@@ -215,7 +218,7 @@
             0,
             0});
             this.iter_input.Name = "iter_input";
-            this.iter_input.Size = new System.Drawing.Size(271, 18);
+            this.iter_input.Size = new System.Drawing.Size(271, 19);
             this.iter_input.TabIndex = 9;
             this.iter_input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -246,7 +249,7 @@
             this.stop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
             this.stop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
             this.stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stop.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stop.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stop.ForeColor = System.Drawing.Color.Black;
             this.stop.Location = new System.Drawing.Point(12, 113);
             this.stop.Margin = new System.Windows.Forms.Padding(12);
@@ -267,7 +270,7 @@
             this.run.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkSlateGray;
             this.run.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan;
             this.run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.run.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.run.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.run.Location = new System.Drawing.Point(12, 12);
             this.run.Margin = new System.Windows.Forms.Padding(12);
             this.run.Name = "run";
@@ -281,6 +284,7 @@
             // 
             this.screen.BackColor = System.Drawing.Color.Honeydew;
             this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.screen.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.screen.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.screen.Location = new System.Drawing.Point(30, 30);
             this.screen.Margin = new System.Windows.Forms.Padding(30, 30, 30, 15);
