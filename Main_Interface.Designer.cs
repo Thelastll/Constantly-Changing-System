@@ -106,8 +106,8 @@
             this.stop_input.Location = new System.Drawing.Point(0, 490);
             this.stop_input.Margin = new System.Windows.Forms.Padding(0);
             this.stop_input.Maximum = new decimal(new int[] {
-            1410065407,
-            2,
+            1215752191,
+            23,
             0,
             0});
             this.stop_input.Name = "stop_input";
@@ -165,7 +165,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(271, 75);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Число итераций перед приостановкой";
+            this.label2.Text = "Количество итераций за один раз";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // describe
@@ -213,10 +213,15 @@
             this.iter_input.Location = new System.Drawing.Point(0, 387);
             this.iter_input.Margin = new System.Windows.Forms.Padding(0);
             this.iter_input.Maximum = new decimal(new int[] {
-            1410065407,
-            2,
+            1215752191,
+            23,
             0,
             0});
+            this.iter_input.Minimum = new decimal(new int[] {
+            1215752191,
+            23,
+            0,
+            -2147483648});
             this.iter_input.Name = "iter_input";
             this.iter_input.Size = new System.Drawing.Size(271, 19);
             this.iter_input.TabIndex = 9;

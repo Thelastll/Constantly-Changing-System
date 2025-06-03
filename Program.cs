@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Windows.Forms;
+using System.CodeDom.Compiler;
 
 namespace ConstantlyChangingSystem
 {
@@ -20,15 +21,15 @@ namespace ConstantlyChangingSystem
 
     static class Run_System
     {
-        public static void Run(ObjectCCS[][] objects, int num_of_iter = 0, int stop = 0)
+        private static ObjectCCS[][] objects;
+        public static void Set(ObjectCCS[][] initial_objects)
         {
+            objects = initial_objects;
+
             if (objects == null)
             {
                 throw new ArgumentNullException("Exemplars were not passed.");
-            }    
-
-            stop = Math.Abs(stop);
-            num_of_iter++;
+            }
 
             foreach (ObjectCCS[] ob in objects)
             {
@@ -41,56 +42,53 @@ namespace ConstantlyChangingSystem
                 Array.Copy(ob, 1, ob_list, 0, ob_list.Length);
                 ob[0].assigning_objects(ob_list);
             }
+        }
 
-            for (int i = 0; i < num_of_iter || num_of_iter <= 0; i++)
+        public static void Run(int num_of_iter = 1, int stop = 0)
+        {
+            stop = Math.Abs(stop);
+
+            for (int i = 0; i < num_of_iter; i++)
             {
-                Console.WriteLine("----------\nIteration " + i + "\n----------");
                 foreach (ObjectCCS[] ob in objects)
                 {
                     ob[0].print_values();
 
                     Console.WriteLine();
 
-                    ob[0].main();
-                }  
+                    ob[0].base_func();
+                }
 
                 foreach (ObjectCCS[] ob in objects)
                 {
                     ob[0].end();
                 }
 
-                if (stop != 0 && i % stop == 0 && (i+1 < num_of_iter || num_of_iter <= 0))
+                if (stop != 0 && i % stop == 0 && (i + 1 < num_of_iter || num_of_iter <= 0))
                 {
-                    Console.ReadKey();
+                    
                 }
             }
-
-            Console.WriteLine("\n----------\n   END  \n----------");
         }
     }
+    public abstract class Object_Base
+    {
+        public static List<string> Values_Type = new List<string>();
 
-    abstract class Object_Base
-    {       
-        public enum Values_Type
-        {
-            x,
-            speed
-        }
-
-        public decimal[,] values = new decimal[Enum.GetValues(typeof(Values_Type)).Length, 2];
+        public decimal[,] values = new decimal[Values_Type.Count, 2];
 
         protected Object_Base[] objects;
     }
 
-    abstract class ObjectCCS : Object_Base
+    public abstract class ObjectCCS : Object_Base
     {
         protected ObjectCCS(decimal[] initial_values)
         {
             if (initial_values == null)
             {
                 throw new ArgumentNullException("Initial values ​​were not passed.");
-            } 
-            else if (initial_values.Length < values.Length/2)
+            }
+            else if (initial_values.Length < values.Length / 2)
             {
                 throw new Exception("Not all parameters were set.");
             }
@@ -100,21 +98,21 @@ namespace ConstantlyChangingSystem
                 values[i, 0] = values[i, 1] = initial_values[i];
             }
         }
-        public abstract void main();
+        public abstract void base_func();
 
-        public virtual void assigning_objects(Object_Base[] list) 
+        public virtual void assigning_objects(Object_Base[] list)
         {
             objects = list;
         }
-        
+
         public virtual void print_values()
         {
             Console.WriteLine('\n' + GetType().Name);
-            if (Enum.GetValues(typeof(Values_Type)).Length > 0)
+            if (Values_Type.Count > 0)
             {
-                for (int i = 0; i < Enum.GetValues(typeof(Values_Type)).Length; i++)
+                for (int i = 0; i < Values_Type.Count; i++)
                 {
-                    Console.WriteLine(((Values_Type)i).ToString() + ' ' + values[i, 0]);
+                    Console.WriteLine(Values_Type[i].ToString() + ' ' + values[i, 0]);
                 }
             }
             else
@@ -125,10 +123,45 @@ namespace ConstantlyChangingSystem
 
         public virtual void end()
         {
-            foreach (int i in Enum.GetValues(typeof(Values_Type)))
+            for (int i = 0; i < Values_Type.Count; i++)
             {
                 values[i, 1] = values[i, 0];
             }
+        }
+    }
+    public class A : ObjectCCS
+    {
+        public A(decimal[] initial_values) : base(initial_values)
+        {
+        }
+        public override void base_func()
+        {
+            Console.WriteLine(Values_Type[0]);
+            /*decimal step = values[(int)Values_Type.speed, 1] - objects[0].values[(int)Values_Type.speed, 1];
+            decimal distance = Math.Abs(values[(int)Values_Type.x, 1] - objects[0].values[(int)Values_Type.x, 1]);
+
+            if (values[(int)Values_Type.speed, 1] < 0)
+            {
+                step *= -1;
+            }
+
+            if (distance < step)
+            {
+                if (step != 0)
+                {
+                    values[(int)Values_Type.x, 0] += distance / step * values[(int)Values_Type.speed, 1];
+                }
+
+                values[(int)Values_Type.speed, 0] += objects[0].values[(int)Values_Type.speed, 1];
+
+            }
+            else
+            {
+
+                values[(int)Values_Type.x, 0] += values[(int)Values_Type.speed, 1];
+            }*/
+
+
         }
     }
 }
